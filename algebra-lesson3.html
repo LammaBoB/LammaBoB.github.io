@@ -50,9 +50,22 @@
   </div>
 
 <script>
-function check1(){ const v=q1.value.trim(); a1.textContent=(v==="6")?"Correct!":"Try again."; a1.className=(v==="6")?"correct":"wrong"; }
-function check2(){ const v=q2.value.trim(); a2.textContent=(v==="4")?"Correct!":"Try again."; a2.className=(v==="4")?"correct":"wrong"; }
-function check3(){ const v=q3.value.trim(); a3.textContent=(v==="−3"||v==="‑3"||v===" -3")?"Correct!":"Try again."; a3.className=(v==="−3"||v==="‑3"||v===" -3")?"correct":"wrong"; }
+function check1(){
+  const v = q1.value.trim();
+  a1.textContent = (v === "6") ? "Correct!" : "Try again.";
+  a1.className = (v === "6") ? "correct" : "wrong";
+}
+function check2(){
+  const v = q2.value.trim();
+  a2.textContent = (v === "4") ? "Correct!" : "Try again.";
+  a2.className = (v === "4") ? "correct" : "wrong";
+}
+function check3(){
+  const v = q3.value.trim();
+  const ok = (v === "−3" || v === "‑3" || v === "-3");
+  a3.textContent = ok ? "Correct!" : "Try again.";
+  a3.className = ok ? "correct" : "wrong";
+}
 </script>
 </body>
 </html>
