@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Algebra – Lesson 5</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; font-family:Inter, sans-serif; background:#050816; color:#f9fafb; }
+    .container { max-width:900px; margin:40px auto; padding:0 20px; }
+    h1 { font-size:32px; margin-bottom:8px; }
+    .question { background:#0f172a; padding:16px; border-radius:12px; margin-top:12px; }
+    input { padding:8px; border-radius:6px; border:none; width:140px; }
+    button { padding:8px 14px; border:none; border-radius:6px; margin-left:8px; cursor:pointer; }
+    .correct { color:#22c55e; font-weight:600; }
+    .wrong { color:#ef4444; font-weight:600; }
+    .nav { margin-top:24px; }
+    .nav a { color:#22c55e; margin-right:16px; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lesson 5: Indices (Exponents)</h1>
+    <p>Use exponent laws: multiply → add powers, divide → subtract powers, power of a power → multiply powers.</p>
+
+    <div class="question">
+      <p><strong>Q1:</strong> Simplify: a³ × a⁴</p>
+      <input id="q1" placeholder="Answer">
+      <button onclick="check1()">Check</button>
+      <p id="a1"></p>
+    </div>
+
+    <div class="question">
+      <p><strong>Q2:</strong> Simplify: a⁷ ÷ a²</p>
+      <input id="q2" placeholder="Answer">
+      <button onclick="check2()">Check</button>
+      <p id="a2"></p>
+    </div>
+
+    <div class="question">
+      <p><strong>Q3:</strong> Simplify: (a³)²</p>
+      <input id="q3" placeholder="Answer">
+      <button onclick="check3()">Check</button>
+      <p id="a3"></p>
+    </div>
+
+    <div class="nav">
+      <a href="algebra-lesson4.html">← Previous</a>
+      <a href="algebra-lesson6.html">Next lesson →</a>
+    </div>
+  </div>
+
+<script>
+function check1(){ const v=q1.value.trim().toLowerCase(); const ok=(v==="a^7"||v==="a7"); a1.textContent=ok?"Correct!":"Try again."; a1.className=ok?"correct":"wrong"; }
+function check2(){ const v=q2.value.trim().toLowerCase(); const ok=(v==="a^5"||v==="a5"); a2.textContent=ok?"Correct!":"Try again."; a2.className=ok?"correct":"wrong"; }
+function check3(){ const v=q3.value.trim().toLowerCase(); const ok=(v==="a^6"||v==="a6"); a3.textContent=ok?"Correct!":"Try again."; a3.className=ok?"correct":"wrong"; }
+</script>
+</body>
+</html>
