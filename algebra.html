@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Algebra Mastery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; font-family:Inter, sans-serif; background:#050816; color:#f9fafb; }
+    .container { max-width:900px; margin:40px auto; padding:0 20px; }
+    h1 { font-size:36px; margin-bottom:10px; }
+    h2 { margin-top:40px; }
+    .lesson { background:#0f172a; padding:20px; border-radius:12px; margin-top:20px; }
+    .question { margin-top:12px; }
+    input { padding:8px; border-radius:6px; border:none; width:120px; }
+    button { padding:8px 14px; border:none; border-radius:6px; margin-left:8px; cursor:pointer; }
+    .correct { color:#22c55e; font-weight:600; }
+    .wrong { color:#ef4444; font-weight:600; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Algebra Mastery</h1>
+    <p>Interactive algebra lessons, puzzles, and challenges.</p>
+
+    <!-- LESSON 1 -->
+    <div class="lesson">
+      <h2>Lesson 1: Simplifying Expressions</h2>
+      <p>Combine like terms and apply exponent rules.</p>
+
+      <div class="question">
+        <p><strong>Q1:</strong> Simplify: 3x + 5x</p>
+        <input id="q1" placeholder="Answer">
+        <button onclick="check1()">Check</button>
+        <p id="a1"></p>
+      </div>
+
+      <div class="question">
+        <p><strong>Q2:</strong> Simplify: x² · x³</p>
+        <input id="q2" placeholder="Answer">
+        <button onclick="check2()">Check</button>
+        <p id="a2"></p>
+      </div>
+    </div>
+
+    <!-- LESSON 2 -->
+    <div class="lesson">
+      <h2>Lesson 2: Solving Equations</h2>
+      <p>Use inverse operations to isolate the variable.</p>
+
+      <div class="question">
+        <p><strong>Q3:</strong> Solve: 2x + 7 = 19</p>
+        <input id="q3" placeholder="Answer">
+        <button onclick="check3()">Check</button>
+        <p id="a3"></p>
+      </div>
+
+      <div class="question">
+        <p><strong>Q4:</strong> Solve: 5x = 45</p>
+        <input id="q4" placeholder="Answer">
+        <button onclick="check4()">Check</button>
+        <p id="a4"></p>
+      </div>
+    </div>
+
+    <!-- LESSON 3 -->
+    <div class="lesson">
+      <h2>Lesson 3: Indices (Exponents)</h2>
+      <p>Master the exponent laws.</p>
+
+      <div class="question">
+        <p><strong>Q5:</strong> Simplify: (a³)²</p>
+        <input id="q5" placeholder="Answer">
+        <button onclick="check5()">Check</button>
+        <p id="a5"></p>
+      </div>
+
+      <div class="question">
+        <p><strong>Q6:</strong> Simplify: a⁵ / a²</p>
+        <input id="q6" placeholder="Answer">
+        <button onclick="check6()">Check</button>
+        <p id="a6"></p>
+      </div>
+    </div>
+
+  </div>
+
+<script>
+function check1(){ let v=q1.value.trim(); a1.textContent = (v==="8x")?"Correct!":"Try again."; a1.className=(v==="8x")?"correct":"wrong"; }
+function check2(){ let v=q2.value.trim(); a2.textContent = (v==="x^5"||v==="x5")?"Correct!":"Try again."; a2.className=(v==="x^5"||v==="x5")?"correct":"wrong"; }
+function check3(){ let v=q3.value.trim(); a3.textContent = (v==="6")?"Correct!":"Try again."; a3.className=(v==="6")?"correct":"wrong"; }
+function check4(){ let v=q4.value.trim(); a4.textContent = (v==="9")?"Correct!":"Try again."; a4.className=(v==="9")?"correct":"wrong"; }
+function check5(){ let v=q5.value.trim(); a5.textContent = (v==="a^6"||v==="a6")?"Correct!":"Try again."; a5.className=(v==="a^6"||v==="a6")?"correct":"wrong"; }
+function check6(){ let v=q6.value.trim(); a6.textContent = (v==="a^3"||v==="a3")?"Correct!":"Try again."; a6.className=(v==="a^3"||v==="a3")?"correct":"wrong"; }
+</script>
+
+</body>
+</html>
