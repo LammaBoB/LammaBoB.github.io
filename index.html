@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Vishaan Learning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, sans-serif;
+      background: #050816;
+      color: #f9fafb;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 32px;
+      background: #020617;
+      border-bottom: 1px solid #1f2937;
+    }
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    .nav-links a {
+      margin-left: 16px;
+      color: #9ca3af;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .nav-links a:hover {
+      color: #e5e7eb;
+    }
+    .hero {
+      max-width: 960px;
+      margin: 48px auto;
+      padding: 0 24px;
+      text-align: left;
+    }
+    .hero-title {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .hero-subtitle {
+      font-size: 18px;
+      color: #9ca3af;
+      margin-bottom: 24px;
+    }
+    .hero-actions button {
+      padding: 12px 20px;
+      margin-right: 12px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .btn-primary {
+      background: #22c55e;
+      color: #022c22;
+    }
+    .btn-secondary {
+      background: transparent;
+      color: #e5e7eb;
+      border: 1px solid #374151;
+    }
+    .courses {
+      max-width: 960px;
+      margin: 32px auto 64px;
+      padding: 0 24px;
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .course-card {
+      background: #020617;
+      border-radius: 16px;
+      padding: 16px;
+      border: 1px solid #1f2937;
+    }
+    .course-title {
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .course-desc {
+      font-size: 14px;
+      color: #9ca3af;
+      margin-bottom: 12px;
+    }
+    .pill {
+      display: inline-block;
+      font-size: 11px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: #111827;
+      color: #9ca3af;
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">VISHAAN LEARNING</div>
+    <nav class="nav-links">
+      <a href="#">Courses</a>
+      <a href="#">Daily Challenge</a>
+      <a href="#">Profile</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 class="hero-title">Learn by solving puzzles, not memorising formulas.</h1>
+      <p class="hero-subtitle">
+        Short, interactive lessons inspired by Brilliant. Built by Vishaan, for curious minds.
+      </p>
+      <div class="hero-actions">
+        <button class="btn-primary">Start a course</button>
+        <button class="btn-secondary">Try today’s challenge</button>
+      </div>
+    </section>
+
+    <section class="courses">
+      <h2 class="section-title">Featured courses</h2>
+      <div class="course-grid">
+        <article class="course-card">
+          <div class="course-title">Pre‑Algebra Intuition</div>
+          <div class="course-desc">
+            Build number sense with visual puzzles and step‑by‑step reasoning.
+          </div>
+          <span class="pill">Beginner</span>
+          <span class="pill">Maths</span>
+        </article>
+
+        <article class="course-card">
+          <div class="course-title">Logic & Puzzles</div>
+          <div class="course-desc">
+            Train your brain with truth tables, deduction games, and story‑based riddles.
+          </div>
+          <span class="pill">Intermediate</span>
+          <span class="pill">Logic</span>
+        </article>
+
+        <article class="course-card">
+          <div class="course-title">Interactive Coding Challenges</div>
+          <div class="course-desc">
+            Learn coding through tiny challenges and instant feedback.
+          </div>
+          <span class="pill">Beginner</span>
+          <span class="pill">Coding</span>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
