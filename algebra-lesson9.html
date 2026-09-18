@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Algebra – Lesson 9</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; font-family:Inter, sans-serif; background:#050816; color:#f9fafb; }
+    .container { max-width:900px; margin:40px auto; padding:0 20px; }
+    h1 { font-size:32px; margin-bottom:8px; }
+    .question { background:#0f172a; padding:16px; border-radius:12px; margin-top:12px; }
+    input { padding:8px; border-radius:6px; border:none; width:200px; }
+    button { padding:8px 14px; border:none; border-radius:6px; margin-left:8px; cursor:pointer; }
+    .correct { color:#22c55e; font-weight:600; }
+    .wrong { color:#ef4444; font-weight:600; }
+    .nav { margin-top:24px; }
+    .nav a { color:#22c55e; margin-right:16px; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lesson 9: Linear Graphs</h1>
+    <p>Use y = mx + c → m = slope, c = intercept.</p>
+
+    <div class="question">
+      <p><strong>Q1:</strong> What is the slope of y = 3x + 5?</p>
+      <input id="q1" placeholder="Answer">
+      <button onclick="check1()">Check</button>
+      <p id="a1"></p>
+    </div>
+
+    <div class="question">
+      <p><strong>Q2:</strong> What is the y‑intercept of y = −2x + 7?</p>
+      <input id="q2" placeholder="Answer">
+      <button onclick="check2()">Check</button>
+      <p id="a2"></p>
+    </div>
+
+    <div class="question">
+      <p><strong>Q3:</strong> For y = 4x − 1, what is y when x = 3?</p>
+      <input id="q3" placeholder="Answer">
+      <button onclick="check3()">Check</button>
+      <p id="a3"></p>
+    </div>
+
+    <div class="nav">
+      <a href="algebra-lesson8.html">← Previous</a>
+      <a href="algebra-lesson10.html">Next lesson →</a>
+    </div>
+  </div>
+
+<script>
+function check1(){ const v=q1.value.trim(); const ok=(v==="3"); a1.textContent=ok?"Correct!":"Try again."; a1.className=ok?"correct":"wrong"; }
+function check2(){ const v=q2.value.trim(); const ok=(v==="7"); a2.textContent=ok?"Correct!":"Try again."; a2.className=ok?"correct":"wrong"; }
+function check3(){ const v=q3.value.trim(); const ok=(v==="11"); a3.textContent=ok?"Correct!":"Try again."; a3.className=ok?"correct":"wrong"; }
+</script>
+</body>
+</html>
